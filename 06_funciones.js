@@ -1,4 +1,5 @@
 /**funciones */
+//**se llama la funsion por medio del nombre de ella  */
 
 function saludar(nombre) {
     console.log("hola soy "+ nombre);
@@ -34,3 +35,5 @@ var resta = (a, b ) => {
     }
 }
 console.log(resta(5, '5'));
+
+/**para sumar un espacio "hola " se le deja un espacio*/
