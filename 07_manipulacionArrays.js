@@ -28,6 +28,9 @@ console.log(letras.length);
 //                        console.log(element);
 //}
 
+
+
+
 //**funciones adicionales  */
 
 //*forEachS
@@ -50,6 +53,17 @@ var letras = ["a", "b", "c", "d", "e"];
 var primerElemento = letras.shift();
 console.log(letras);
 console.log(primerElemento);
+
+//**unchift ingresa el elemento al inicio de la lista  */
+
+var letras = ["a", "b", "c", "d", "e"];
+letras.unshift("f", "g", "h");
+console.log(letras);
+
+//** splice elimina elementos y coloca elementos dentro de la lista  */
+var letras = ["a", "b", "c", "d", "e"];
+letras.splice(1,2,"z","x","y")
+console.log(letras);
 
 //**pop quita el ultimo elemento del arreglo le devuelve el valor y lo saca de la lista    */
 
@@ -94,6 +108,50 @@ var estudiantes = ["cisco", "johanna", "juan", "pepe"];
 var asistencia = estudiantes.map((nombre) => "${nombre}.");
 console.log(estudiantes);
 console.log(asistencia);
+
+//** length porpiedad para saber el alrgo de una lista   */
+
+var estudiantes = ["cisco", "johanna", "juan", "pepe"];
+
+let totalEstudiantes = estudiantes.length;
+console.log(`En la lista de estudiantes tenemos ${totalEstudiantes} Estudiantes`);
+console.log(`Los estudiantes son ${estudiantes.length}`);
+
+//** filter  filtrar ellemntos de la lista  */
+var estudiantes = ["cisco", "johanna", "juan", "pepe"];
+
+let estudiantesFiltrados = estudiantes.filter((e) => e == 'johanna');
+console.log(`la estudiante matriculada es: ${estudiantesFiltrados}`);
+
+//**join unir los elementos en una cadena de caracteres  */
+
+let estudiantes = ["cisco", "johanna", "juan", "pepe","carlos","manuel"];
+console.log(estudiantes.join('-'));
+
+//** sort ordenar los elementos alfabeticamente */
+
+let estudiantes = ["cisco", "johanna", "juan", "pepe","carlos","manuel"];
+console.log(estudiantes.sort());
+
+//** indexof conocer la posicion desppues de ordenar la lista */
+
+let estudiantes = ["cisco", "johanna", "juan", "pepe","carlos","manuel"];
+console.log(`juan quedo en la poscicion: ${estudiantes.indexOf('juan')}`);
+
+//** concat concatena 2 arrays mas no los modifica  */
+
+let estudiantes = ["cisco", "johanna", "juan", "pepe","carlos","manuel"];
+let edad = [35,33,25,38,30,18];
+let estudiantesMasedad = estudiantes.concat(edad);
+console.log(estudiantesMasedad);
+
+
+
+
+
+
+
+
 
 //** RECORRER UN ARREGLO CON BUCLE FOR */
 
